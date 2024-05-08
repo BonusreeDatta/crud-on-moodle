@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/crud/db/install.xml" VERSION="1"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLE NAME="crud_data" COMMENT="Sample data table for my plugin">
+        <FIELDS>
+            <FIELD NAME="id" TYPE="INTEGER" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+            <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" />
+            <FIELD NAME="email" TYPE="text" NOTNULL="false" />
+        </FIELDS>
+    </TABLE>
+</XMLDB>

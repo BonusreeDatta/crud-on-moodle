@@ -1,0 +1,34 @@
+
+<h3 class="mt-5 text-center"> Records</h3>
+
+<table class="table table-hover table-striped">
+   <thead class="thead-secondary">
+    <tr>
+      <th scope="col" class="text-center">ID</th>
+      <th scope="col" class="text-center" colspan="2">Name</th>
+      <th scope="col" class="text-center">emiall</th>
+      <th scope="col" class="text-center">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#display}}
+     <tr>
+          <td class="text-center">{{id}}</td>
+          <td class="text-center">{{name}}</td>
+          <td class="text-center">{{email}}</td>
+          <td class="text-center">
+              <a href="{{editurl}}/?id={{id}}" class="btn btn-info">Edit </a>
+              <form action="{{deleteurl}}" method="POST" style="display:inline-block;">
+                  <input type="hidden" name="id" value="{{id}}"> <!-- Hidden field with the record ID -->
+                  <button type="submit" class="btn btn-danger">Delete</button> <!-- Submit button to trigger deletion -->
+              </form>
+          </td>
+     </tr>
+    {{/display}}
+  </tbody>
+</table>
+
+<div class="text-center mt-5 pt-5">
+    <a href="{{editurl}}" class="btn btn-primary">Create New record </a>
+</div>
+
