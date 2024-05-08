@@ -21,7 +21,8 @@
  * @copyright  2024 Bonusree
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-function local_Crud_table_display() {
+//table display function is here
+ function local_Crud_table_display() {
     global $DB, $OUTPUT;
     global $DB;
     $infoCrud=$DB->get_records('crud_data');
