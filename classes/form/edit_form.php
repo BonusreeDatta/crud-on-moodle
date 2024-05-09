@@ -16,6 +16,9 @@ class crud_form extends moodleform {
         $mform->setType('name', PARAM_TEXT);
         $mform->setDefault('name', $this->_customdata['name']);
 
+        $mform->addElement('text', 'password', get_string( 'password')  );
+        $mform->setType('password', PARAM_TEXT);
+        
 
         $mform->addElement('text', 'email', get_string('email'), 'maxlength="100" size="25" ');
         $mform->setType('email', PARAM_NOTAGS);
